@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart - Online Grocery Store</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1b5e20;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+
+        nav a:hover {
+            background: #145a1f;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        article {
+            background: white;
+            padding: 20px;
+            flex: 1 1 300px;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        form button {
+            background: #2e7d32;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #1b5e20;
+        }
+
+        footer {
+            background: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>FreshMart – Online Grocery Store</h1>
+    <p>Fresh • Affordable • Delivered to Your Doorstep</p>
+</header>
+
+<nav>
+    <a href="#about">Home</a>
+    <a href="#products">Products</a>
+    <a href="#media">Media</a>
+    <a href="#price">Price List</a>
+    <a href="#order">Order</a>
+</nav>
+
+<section id="about">
+    <h2>About FreshMart</h2>
+    <p>
+        FreshMart is an online grocery store that enables customers to purchase
+        fresh fruits, vegetables, dairy products, and daily essentials from the
+        comfort of their homes. This website is developed using HTML and CSS and
+        demonstrates responsive web design concepts.
+    </p>
+</section>
+
+<section id="products">
+    <h2>Products & Services</h2>
+
+    <div class="container">
+        <article>
+            <h3>Product Categories</h3>
+            <ul>
+                <li>Fruits & Vegetables</li>
+                <li>Dairy Products</li>
+                <li>Grains & Pulses</li>
+                <li>Snacks & Beverages</li>
+                <li>Household Essentials</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Our Services</h3>
+            <ul>
+                <li>Home delivery</li>
+                <li>Fresh quality products</li>
+                <li>Affordable prices</li>
+                <li>Easy online ordering</li>
+            </ul>
+        </article>
+    </div>
+</section>
+<section id="media">
+    <h2>Media Section</h2>
+
+    <article>
+        <h3>Fresh Grocery Products</h3>
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e"
+             alt="Fresh fruits and vegetables">
+    </article>
+
+    <article>
+        <h3>Online Grocery Shopping</h3>
+        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31b"
+             alt="Online grocery shopping">
+    </article>
+</section>
+<section id="price">
+    <h2>Grocery Price List</h2>
+
+    <table>
+        <tr>
+            <th>Item Name</th>
+            <th>Category</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Apples</td>
+            <td>Fruits</td>
+            <td>₹120 / kg</td>
+        </tr>
+        <tr>
+            <td>Milk</td>
+            <td>Dairy</td>
+            <td>₹55 / litre</td>
+        </tr>
+        <tr>
+            <td>Rice</td>
+            <td>Grains</td>
+            <td>₹60 / kg</td>
+        </tr>
+        <tr>
+            <td>Bread</td>
+            <td>Bakery</td>
+            <td>₹40</td>
+        </tr>
+        <tr>
+            <td>Cooking Oil</td>
+            <td>Grocery</td>
+            <td>₹150 / litre</td>
+        </tr>
+    </table>
+</section>
+<section id="order">
+    <h2>Customer Order Form</h2>
+    <p>Please fill in the details below to place your grocery order.</p>
+
+    <form>
+        <input type="text" placeholder="Enter Your Full Name" required>
+
+        <input type="email" placeholder="Enter Your Email Address" required>
+
+        <input type="text" placeholder="Enter Delivery Address" required>
+
+        <textarea rows="4" placeholder="Enter Grocery Items and Quantity"></textarea>
+
+        <button type="submit">Place Order</button>
+    </form>
+</section>
